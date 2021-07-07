@@ -20,7 +20,7 @@ unique_books <- function(data, column = 'title') {
     last <- match [-1]
     if (length(last))
     {
-      
+      duplicates[[last]] <- last
     }
   }
 }
