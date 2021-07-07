@@ -18,5 +18,9 @@ unique_books <- function(data, column = 'title') {
   {
     match <- agrep(item, items)
     last <- match [-1]
+    if (length(last))
+    {
+      
+    }
   }
 }
