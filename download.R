@@ -28,5 +28,5 @@ unique_books <- function(data, column = 'title') {
 }
 
 twain_unique <- unique_books(twain_by_download, 'title')
-p <- ggplot()
+p <- ggplot() + geom_bar()
 plot(p)
