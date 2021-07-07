@@ -24,4 +24,5 @@ unique_books <- function(data, column = 'title') {
     }
   }
   remove <- unique(unlist(duplicates))
+  data <- data[-remove]
 }
