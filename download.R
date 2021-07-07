@@ -9,3 +9,14 @@ twain <- filter(books, author == "Twain, Mark")
 
 twain_refined <- twain %>% select(title, author, downloads, avg_words_per_sentence, sentences) 
 
+twain_by_download <- twain_refined %>% arrange(desc(downloads))
+
+unique_books <- function(data, column = 'title') {
+  items <- data %>% pull(column)
+  duplicates <- list()
+  for (item in items) 
+  {
+    match <- agrep(item, items)
+    last <- match [-1]
+  }
+}
